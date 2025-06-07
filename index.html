@@ -1,14 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>TechNova - Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
+        main {
+            text-align: center;
+            padding: 40px;
+        }
+        .products img {
+            margin: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="TechNova Logo" style="height:50px;">
+        <img src="images/logo.png" alt="TechNova Logo" style="height:50px;">
         <h1>TechNova</h1>
+        <h2>Технологии нового поколения</h2>
         <nav>
             <a href="index.html">Главная</a> |
             <a href="catalog.html">Каталог</a> |
@@ -16,17 +46,25 @@
             <a href="contacts.html">Контакты</a>
         </nav>
     </header>
+
     <main>
-        <h2>Современные технологии для вашего дома и офиса</h2>
-        <div>
-            <img src="smartphone.jpg" alt="Смартфоны" width="200">
-            <p>Смартфоны</p>
-            <img src="laptop.jpg" alt="Ноутбуки" width="200">
-            <p>Ноутбуки</p>
-            <img src="watch.jpg" alt="Умные часы" width="200">
-            <p>Умные часы</p>
+        <h2>Наши продукты</h2>
+        <div class="products">
+            <a href="catalog.html">
+                <img src="images/smartphone.jpg" alt="Смартфоны" width="200">
+                <p>Смартфоны</p>
+            </a>
+            <a href="catalog.html">
+                <img src="images/laptop.jpg" alt="Ноутбуки" width="200">
+                <p>Ноутбуки</p>
+            </a>
+            <a href="catalog.html">
+                <img src="images/watch.jpg" alt="Умные часы" width="200">
+                <p>Умные часы</p>
+            </a>
         </div>
     </main>
+
     <footer>
         <p>г. Москва, ул. Примерная, д.1</p>
         <p>Тел.: +7 (495) 123-45-67, +7 (495) 765-43-21</p>
