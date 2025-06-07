@@ -24,10 +24,17 @@
             text-align: center;
             padding: 40px;
         }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
         .products img {
-            margin: 15px;
+            width: 200px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         footer p {
             margin: 5px 0;
@@ -50,18 +57,18 @@
     <main>
         <h2>Наши продукты</h2>
         <div class="products">
-            <a href="catalog.html">
-                <img src="images/smartphone.jpg" alt="Смартфоны" width="200">
+            <div>
+                <img src="images/smartphone.jpg" alt="Смартфоны">
                 <p>Смартфоны</p>
-            </a>
-            <a href="catalog.html">
-                <img src="images/laptop.jpg" alt="Ноутбуки" width="200">
+            </div>
+            <div>
+                <img src="images/laptop.jpg" alt="Ноутбуки">
                 <p>Ноутбуки</p>
-            </a>
-            <a href="catalog.html">
-                <img src="images/watch.jpg" alt="Умные часы" width="200">
+            </div>
+            <div>
+                <img src="images/watch.jpg" alt="Умные часы">
                 <p>Умные часы</p>
-            </a>
+            </div>
         </div>
     </main>
 
