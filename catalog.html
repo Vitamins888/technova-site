@@ -1,13 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог - TechNova</title>
+    <meta charset="UTF-8" />
+    <title>TechNova - Каталог</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+        }
+        header, footer {
+            background-color: #f0f0f0;
+            padding: 20px; text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
+        main {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .product-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .product-item img {
+            width: 200px;
+            border-radius: 8px;
+        }
+        .product-info {
+            max-width: 700px;
+        }
+        .product-info h3 {
+            margin-top: 0;
+            color: #004080;
+        }
+        .product-info p {
+            line-height: 1.5;
+        }
+        .product-info a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #004080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product-info a:hover {
+            background-color: #002a5c;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Каталог товаров</h1>
+        <img src="images/logo.png" alt="TechNova Logo" style="height:50px;" />
+        <h1>TechNova</h1>
         <nav>
             <a href="index.html">Главная</a> |
             <a href="catalog.html">Каталог</a> |
@@ -15,16 +71,43 @@
             <a href="contacts.html">Контакты</a>
         </nav>
     </header>
+
     <main>
-        <h2>Смартфоны</h2>
-        <p>Samsung Galaxy A55 – 42 990₽</p>
-        <p>iPhone 14 – 94 990₽</p>
-        <h2>Ноутбуки</h2>
-        <p>ASUS ZenBook 14 – 79 000₽</p>
-        <p>MacBook Air M2 – 124 990₽</p>
-        <h2>Умные часы</h2>
-        <p>Apple Watch SE – 29 990₽</p>
-        <p>Samsung Galaxy Watch – 23 990₽</p>
+        <h2>Каталог продуктов</h2>
+
+        <div class="product-item">
+            <img src="images/smartphone.jpg" alt="Смартфоны" />
+            <div class="product-info">
+                <h3>Смартфоны</h3>
+                <p>Современные смартфоны с высоким разрешением экрана, мощным процессором и длительным временем работы от аккумулятора.</p>
+                <a href="smartphone.html">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="images/laptop.jpg" alt="Ноутбуки" />
+            <div class="product-info">
+                <h3>Ноутбуки</h3>
+                <p>Легкие и производительные ноутбуки для работы и развлечений с современными характеристиками и длительным временем автономной работы.</p>
+                <a href="laptop.html">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="images/watch.jpg" alt="Умные часы" />
+            <div class="product-info">
+                <h3>Умные часы</h3>
+                <p>Стильные умные часы с множеством функций: отслеживание физической активности, уведомления и управление смартфоном.</p>
+                <a href="watch.html">Подробнее</a>
+            </div>
+        </div>
+
     </main>
+
+    <footer>
+        <p>г. Москва, ул. Примерная, д.1</p>
+        <p>Тел.: +7 (495) 123-45-67, +7 (495) 765-43-21</p>
+        <p>Email: info@technova.ru</p>
+    </footer>
 </body>
 </html>
